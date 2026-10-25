@@ -1,0 +1,91 @@
+# What to look for. Edit the title patterns for your field.
+filters:
+  title_include:
+    - 'machine learning'
+    - '\bml\b'
+    - '\bmle\b'
+    - '\bai\b'
+    - 'artificial intelligence'
+    - '\bllms?\b'
+    - 'applied scientist'
+    - 'research (engineer|scientist)'
+    - 'deep learning'
+    - '\bnlp\b'
+    - 'generative'
+    - '\bgenai\b'
+    - '\bevals?\b'
+    - 'evaluation'
+    - '\bagent(s|ic)?\b'
+    - 'recommend'
+    - 'ranking'
+    - 'personali[sz]ation'
+    - 'relevance'
+    - 'fraud'
+    - '\bmodel(s|ing)?\b'
+    - 'inference'
+    - 'post[- ]?training'
+    - 'pre[- ]?training'
+    - 'alignment'
+    - 'interpretability'
+    - 'reinforcement learning'
+    - '\brl\b'
+  title_exclude:
+    - '\bintern(ship)?\b'
+    - 'new grad'
+    - 'university grad'
+    - 'early career'
+    - '\bjunior\b'
+    - '\bjr\b'
+    - '\bmanager\b'
+    - '\bdirector\b'
+    - '\bhead of\b'
+    - '\bvp\b'
+    - 'vice president'
+    - '\bsales\b'
+    - 'account executive'
+    - 'recruit'
+    - 'marketing'
+    - 'customer success'
+    - '\bsupport\b'
+    - 'counsel'
+    - 'designer'
+    - '\banalyst\b'
+    - 'solutions (engineer|architect)'
+    - '\bcontract(or)?\b'
+    - 'student'
+    - 'part[- ]time'
+    - '\btemporary\b'
+    - 'partnerships?'
+    - 'technical writer'
+    - '\bgrants?\b'
+    - 'fellowship'
+    - 'architect'
+    - '\bdemo\b'
+    - '\bproduct (lead|manager|owner|director)\b'
+    - '\bandroid\b'
+    - '\bios\b'
+    - '\bmobile\b'
+    - 'front[- ]?end'
+    - '\bsecurity\b'
+  # places you can commute to (matched in the job location); office-day questions use it too
+  commute_area: [san francisco, bay area, palo alto, mountain view, sunnyvale, cupertino, santa clara,
+    san jose, menlo park, redwood city, san mateo, foster city, south san francisco, burlingame,
+    san bruno, millbrae, belmont, san carlos, los altos, los gatos, campbell, milpitas, fremont,
+    "newark, ca", hayward, oakland, berkeley, emeryville, alameda, walnut creek, pleasanton,
+    san ramon, saratoga]
+  non_us: [canada, toronto, vancouver, montreal, ontario, united kingdom, uk, london, ireland,
+    dublin, germany, berlin, munich, france, paris, netherlands, amsterdam, spain, madrid,
+    barcelona, portugal, lisbon, india, bengaluru, bangalore, hyderabad, pune, singapore, japan,
+    tokyo, australia, sydney, brazil, sao paulo, mexico, poland, warsaw, israel, tel aviv,
+    switzerland, zurich, sweden, stockholm, emea, apac, latam, europe, korea, seoul, china, taiwan]
+  remote_ok: true
+  pay_floor: 200000    # your minimum base pay, compared using pay_basis
+  pay_basis: midpoint   # top | midpoint | bottom of the posted base range
+  require_pay: true
+  max_age_days: 14
+
+limits:
+  per_company_window_days: 90
+  per_company_max: 2
+  daily_max: 10
+  max_plans_per_run: 60

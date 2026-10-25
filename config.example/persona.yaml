@@ -1,0 +1,44 @@
+# About you. Every form answer that is a plain fact comes from here, so keep it true.
+name:
+  first: Alex
+  middle: null
+  last: Example
+  preferred: Alex
+contact:
+  email: alex@example.com
+  phone: "555-010-0000"
+address:
+  city: San Francisco
+  state: California
+  state_code: CA
+  country: United States
+  street: null          # some forms ask (Workday); the agent asks you the first time
+  postal_code: null
+links:
+  linkedin: https://www.linkedin.com/in/alex-example
+  website: https://example.com
+  github: https://github.com/alex-example
+work_auth:
+  authorized_us: true
+  needs_sponsorship: false   # true also skips postings that say they won't sponsor a visa
+  visa: null                 # the visa you hold, if any (for example H-1B)
+employment:
+  current_company: ExampleCorp
+  current_title: Machine Learning Engineer
+  past_employers: [ExampleCorp]
+start_notice_days: 14
+eeo:                    # optional demographic questions; "decline" picks the decline option
+  gender: decline
+  race: decline
+  hispanic_latino: decline
+  veteran: I am not a protected veteran
+  disability: decline
+  sexual_orientation: decline
+  transgender: decline
+  pronouns: decline
+office:
+  max_days: 3           # office days a week you accept, at places listed in search.yaml commute_area
+consents:               # what the tool may accept for you; AI-use attestations always need you
+  arbitration: false
+  interview_recording: false
+  confidentiality: false

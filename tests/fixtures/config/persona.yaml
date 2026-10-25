@@ -1,0 +1,43 @@
+name:
+  first: Alex
+  middle: null
+  last: Example
+  preferred: Alex
+contact:
+  email: alex@example.com
+  phone: "555-010-0000"
+address:
+  city: San Francisco
+  state: California
+  state_code: CA
+  country: United States
+  street: null        # only Workday asks; fill before Workday support is turned on
+  postal_code: null
+links:
+  linkedin: https://www.linkedin.com/in/alex-example
+  website: https://example.com
+  github: https://github.com/alex-example
+work_auth:
+  authorized_us: true
+  needs_sponsorship: true
+  visa: H-1B
+employment:
+  current_company: ExampleCorp
+  current_title: Senior Machine Learning Engineer
+  past_employers: [ExampleCorp]
+start_notice_days: 14
+eeo:
+  gender: Male
+  race: decline
+  hispanic_latino: decline
+  veteran: I am not a protected veteran
+  disability: decline
+  sexual_orientation: decline
+  transgender: decline
+  pronouns: decline
+office:
+  max_days: 3           # office days a week you accept; where you commute is search.yaml bay_area
+consents:               # what the tool may accept for you; AI-use attestations always need you
+  arbitration: false
+  interview_recording: false
+  confidentiality: false

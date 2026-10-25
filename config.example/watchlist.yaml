@@ -1,0 +1,86 @@
+# Company job boards read on every run (slugs checked live 2026-10-23).
+# ats: greenhouse | ashby | lever. Set enabled: false to pause one.
+companies:
+  - {name: Abnormal Security, ats: greenhouse, slug: abnormalsecurity}
+  - {name: Abridge, ats: ashby, slug: abridge}
+  - {name: Affirm, ats: greenhouse, slug: affirm}
+  - {name: Airbnb, ats: greenhouse, slug: airbnb}
+  - {name: Airtable, ats: greenhouse, slug: airtable}
+  - {name: Anthropic, ats: greenhouse, slug: anthropic}
+  - {name: Arize AI, ats: greenhouse, slug: arizeai}
+  - {name: Asana, ats: greenhouse, slug: asana}
+  - {name: Baseten, ats: ashby, slug: baseten}
+  - {name: Brex, ats: greenhouse, slug: brex}
+  - {name: Character.AI, ats: ashby, slug: character}
+  - {name: Chime, ats: greenhouse, slug: chime}
+  - {name: Clay, ats: ashby, slug: claylabs}
+  - {name: Cloudflare, ats: greenhouse, slug: cloudflare}
+  - {name: Cognition, ats: ashby, slug: cognition}
+  - {name: Cohere, ats: ashby, slug: cohere}
+  - {name: Coinbase, ats: greenhouse, slug: coinbase}
+  - {name: Cursor, ats: ashby, slug: cursor}
+  - {name: Databricks, ats: greenhouse, slug: databricks}
+  - {name: Datadog, ats: greenhouse, slug: datadog}
+  - {name: Decagon, ats: ashby, slug: decagon}
+  - {name: Descript, ats: greenhouse, slug: descript}
+  - {name: Discord, ats: greenhouse, slug: discord}
+  - {name: DoorDash, ats: greenhouse, slug: doordashusa}
+  - {name: Dropbox, ats: greenhouse, slug: dropbox}
+  - {name: Faire, ats: greenhouse, slug: faire}
+  - {name: Figma, ats: greenhouse, slug: figma}
+  - {name: Figure AI, ats: greenhouse, slug: figureai}
+  - {name: Glean, ats: greenhouse, slug: gleanwork}
+  - {name: Gusto, ats: greenhouse, slug: gusto}
+  - {name: Harvey, ats: ashby, slug: harvey}
+  - {name: Instacart, ats: greenhouse, slug: instacart}
+  - {name: Kikoff, ats: greenhouse, slug: kikoff}
+  - {name: Labelbox, ats: greenhouse, slug: labelbox}
+  - {name: Lambda, ats: ashby, slug: lambda}
+  - {name: LangChain, ats: ashby, slug: langchain}
+  - {name: Linear, ats: ashby, slug: linear}
+  - {name: Lyft, ats: greenhouse, slug: lyft}
+  - {name: Mercor, ats: ashby, slug: mercor}
+  - {name: Mercury, ats: greenhouse, slug: mercury}
+  - {name: Modal, ats: ashby, slug: modal}
+  - {name: MongoDB, ats: greenhouse, slug: mongodb}
+  - {name: Nextdoor, ats: greenhouse, slug: nextdoor}
+  - {name: Notion, ats: ashby, slug: notion}
+  - {name: Nubank, ats: ashby, slug: nubank}
+  - {name: Nuro, ats: greenhouse, slug: nuro}
+  - {name: Okta, ats: greenhouse, slug: okta}
+  - {name: OpenAI, ats: ashby, slug: openai}
+  - {name: Palantir, ats: lever, slug: palantir}
+  - {name: Perplexity, ats: ashby, slug: perplexity}
+  - {name: Physical Intelligence, ats: ashby, slug: physicalintelligence}
+  - {name: Pinecone, ats: ashby, slug: pinecone}
+  - {name: Pinterest, ats: greenhouse, slug: pinterest}
+  - {name: Plaid, ats: ashby, slug: plaid}
+  - {name: Quora, ats: ashby, slug: quora}
+  - {name: Ramp, ats: ashby, slug: ramp}
+  - {name: Reddit, ats: greenhouse, slug: reddit}
+  - {name: Replit, ats: ashby, slug: replit}
+  - {name: Robinhood, ats: greenhouse, slug: robinhood}
+  - {name: Roblox, ats: greenhouse, slug: roblox}
+  - {name: Rubrik, ats: greenhouse, slug: rubrik}
+  - {name: SambaNova, ats: greenhouse, slug: sambanovasystems}
+  - {name: Samsara, ats: greenhouse, slug: samsara}
+  - {name: Scale AI, ats: greenhouse, slug: scaleai}
+  - {name: Sesame, ats: ashby, slug: sesame}
+  - {name: Sierra, ats: ashby, slug: sierra}
+  - {name: Sigma Computing, ats: greenhouse, slug: sigmacomputing}
+  - {name: Snorkel AI, ats: greenhouse, slug: snorkelai}
+  - {name: Snowflake, ats: ashby, slug: snowflake}
+  - {name: SoFi, ats: greenhouse, slug: sofi}
+  - {name: Spotify, ats: lever, slug: spotify}
+  - {name: Stripe, ats: greenhouse, slug: stripe}
+  - {name: Suno, ats: ashby, slug: suno}
+  - {name: Thinking Machines Lab, ats: ashby, slug: thinkingmachines}
+  - {name: Together AI, ats: greenhouse, slug: togetherai}
+  - {name: Twilio, ats: greenhouse, slug: twilio}
+  - {name: Vercel, ats: greenhouse, slug: vercel}
+  - {name: Verkada, ats: greenhouse, slug: verkada}
+  - {name: Waymo, ats: greenhouse, slug: waymo}
+  - {name: Wiz, ats: greenhouse, slug: wizinc}
+  - {name: Writer, ats: ashby, slug: writer}
+  - {name: xAI, ats: greenhouse, slug: xai}
+  - {name: Zoox, ats: lever, slug: zoox}

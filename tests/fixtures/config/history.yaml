@@ -1,0 +1,5 @@
+blocked:
+  - company: ExampleCorp
+    reason: current employer
+applied:
+  - {company: Some Company, title: "Machine Learning Engineer", job_id: "123", applied: 2026-01-15}

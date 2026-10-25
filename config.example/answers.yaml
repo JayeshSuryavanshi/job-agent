@@ -1,0 +1,86 @@
+# Saved answers. Each entry matches a form question by phrase (any one of `match`; all of
+# `require`; none of `unless`). The most specific entry wins: company-scoped first, then
+# `priority`, then the longest matching phrase. Use `companies: [Name]` for one company only.
+# Attestations (AI-use policies, "I personally completed this", arbitration) are only answered
+# by a company-scoped entry, so each one is your explicit decision.
+entries:
+  - id: work_authorized
+    match:
+      - authorized to work
+      - legally authorized
+      - authorization to work
+      - eligible to work
+      - legally eligible
+      - right to work
+      - permitted to work
+      - work authorization
+    answer: "Yes"
+    priority: 1
+
+  - id: authorized_without_sponsorship
+    match:
+      - without sponsorship
+      - without visa sponsorship
+      - without the need for sponsorship
+      - without the need for visa sponsorship
+      - without requiring sponsorship
+      - without requiring visa sponsorship
+      - without employer sponsorship
+      - without company sponsorship
+      - without any sponsorship
+    answer: "Yes"
+    priority: 10
+    note: no sponsorship needed; if you need one, make this "No" and the next entry "Yes"
+
+  - id: needs_sponsorship
+    match:
+      - require sponsorship
+      - require visa sponsorship
+      - require employment visa sponsorship
+      - require immigration sponsorship
+      - need sponsorship
+      - need visa sponsorship
+      - need immigration sponsorship
+      - sponsorship now or in the future
+      - now or in the future require
+      - require an employment visa
+      - require a visa
+      - visa sponsorship
+      - h 1b
+      - h1b
+    answer: "No"
+    priority: 5
+
+  - id: office_up_to_three_days
+    match:
+      - 25 of the time
+      - one day a week
+      - 1 day a week
+      - two days a week
+      - 2 days a week
+      - three days a week
+      - 3 days a week
+      - three days per week
+      - 3 days per week
+    unless: [4 days, four days, 5 days, five days, fully onsite, full time in office]
+    answer: "Yes"
+    priority: 2
+    note: yes to up to three office days a week; 4-5 days stays unanswered on purpose
+
+  - id: sms_consent
+    match: [sms, text message, text messages, whatsapp]
+    answer: "No"
+    priority: 3
+
+  - id: years_experience
+    match:
+      - years of experience
+      - years of industry experience
+      - years of professional experience
+      - years of relevant experience
+    answer: "5+"
+    note: matches the resume; range dropdowns stay unanswered until you pick
+
+  - id: security_clearance
+    match: [security clearance, active clearance]
+    answer: "No"

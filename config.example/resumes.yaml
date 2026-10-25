@@ -1,0 +1,60 @@
+# Resume files the tool can attach, and how it picks one per role. `file` is the copy inside
+# your data folder; `job-agent sync-resumes` refreshes it from `source`. `keywords` are regex
+# patterns with weights, counted in the posting title (4x) and text. A variant is picked when it
+# clearly beats the others; otherwise `default` is used. A single resume with no keywords works.
+default: general
+variants:
+  - name: ml
+    file: resumes/ml/Resume.pdf
+    source: ~/path/to/your/ml-resume.pdf
+    use_for: ranking, recommendation, risk and forecasting roles
+    keywords:
+      '\bfraud\b': 3
+      '\brisk\b': 2
+      '\babuse\b': 2
+      '\bintegrity\b': 2
+      '\banomal': 2
+      '\bcredit\b': 1
+      '\bunderwriting\b': 2
+      '\bpayments?\b': 2
+      '\branking\b': 2
+      '\brecommend': 2
+      '\brecsys\b': 2
+      '\bads\b': 1
+      '\bpersonali[sz]ation\b': 2
+      '\bforecast': 2
+      'time series': 2
+      '\bdeep learning\b': 1
+      '\bpytorch\b': 1
+      '\bmodel training\b': 1
+  - name: llm
+    file: resumes/llm/Resume.pdf
+    source: ~/path/to/your/llm-resume.pdf
+    use_for: LLM, agent and evaluation roles
+    keywords:
+      '\bevals?\b': 3
+      '\bevaluations?\b': 3
+      '\bbenchmarks?\b': 2
+      '\bllms?\b': 2
+      'large language models?': 2
+      '\bagents?\b': 2
+      '\bagentic\b': 3
+      '\brag\b': 1
+      '\bretrieval\b': 1
+      '\bprompt': 1
+      '\bgenerative\b': 1
+      '\bgenai\b': 1
+      '\bharness': 3
+      'red[- ]team': 2
+      '\bjudges?\b': 2
+  - name: general
+    file: resumes/general/Resume.pdf
+    source: ~/path/to/your/resume.pdf
+    use_for: everything else
+    keywords:
+      '\bplatform\b': 1
+      '\binfrastructure\b': 2
+      '\bmlops\b': 2
+      '\bdistributed\b': 1
+      '\bdeveloper tools?\b': 2
+      '\btooling\b': 1

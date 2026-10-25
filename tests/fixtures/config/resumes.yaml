@@ -1,0 +1,14 @@
+default: general
+variants:
+  - name: mle
+    file: resumes/mle/Resume.pdf
+    source: ~/path/to/your/resume.pdf
+    use_for: core ML and fraud/risk roles
+  - name: eval
+    file: resumes/eval/Resume.pdf
+    source: ~/path/to/your/resume.pdf
+    use_for: LLM evaluation and agent roles
+  - name: general
+    file: resumes/general/Resume.pdf
+    source: ~/path/to/your/resume.pdf
+    use_for: everything else
